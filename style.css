@@ -1,33 +1,92 @@
-* {
+*
+{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body {
-    font-family: sans-serif;
+body
+{
+    font-family: 'Inter', sans-serif;
     line-height: 1.4;
-    background-color: rgb(32, 29, 29);
+    background-color: #1d1d1d;
+
     color: rgb(169, 167, 167);
 }
-.HTML_Container {
+.HTML_Container
+{
     display: grid;
-    /* justify-items: stretch; */
-    align-content;
-
 }
 
-.Nav_Bar {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    justify-items: stretch;
-    /* justify-items: end; */
-    /* grid-auto-rows: minmax(100px, auto); */
+
+.Nav_Bar
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px ;
+    background-color: #0a0908;
+
+}
+.links
+{
+    display: flex;
+    justify-content: space-between;
+    gap: 1.5em;
+
+}
+.Nav_Bar a:link{
+    color: rgb(169, 167, 167);
+    font-size: large;
+    text-decoration: none;
+    font-size: 2em;
+}
+.Nav_Bar a:visited {
+    color: rgb(169, 167, 167);
+    text-decoration: none;
+    background-color: whitesmoke;
+  }
+  
+.Nav_Bar a:hover {
+    text-decoration: none;
+    border: white;
+    border-color: aliceblue;
+    /* cursor: crosshair; */
+  }
+  
+.Nav_Bar a:active {
+    text-decoration: underline;
 }
 
 /* Change hobe */
-.Nav_Barprofile img{
+.Nav_Barprofile img
+{
     width: 5em;
     border-radius: 50%;
     align-self: end;
+}
+
+.Gallery
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.Gallery h1
+{
+    align-self: start;
+}
+
+.Gallery img{
+    width: 70%;
+}
+
+.Contact_info ul
+{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0 100px;
 }
