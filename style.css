@@ -158,11 +158,12 @@ h1 {
 }
 
 .footer {
-    padding: 2rem 0rem;
+    padding: 2rem;
     background-color: rgb(0, 0, 0);
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
+    font-size: large;
 }
 
 .header {
@@ -177,9 +178,10 @@ h1 {
     grid-column: 1/-1;
     display: flex;
     justify-content: space-between;
+    align-self: end;
 }
 
-@media (max-width: 337px) {
+@media (max-width: 412px) {
     .Nav_Bar a:link {
         color: rgb(169, 167, 167);
         text-decoration: none;
@@ -190,7 +192,7 @@ h1 {
         font-size: 1.5rem;
     }
     .footer-container {
-        font-size: 0.7rem;
+        font-size: 0.75rem;
         justify-content: space-between;
     }
 }
