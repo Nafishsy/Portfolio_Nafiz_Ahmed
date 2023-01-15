@@ -10,12 +10,24 @@ body {
     background-color: rgb(32, 29, 29);
     color: rgb(169, 167, 167);
 }
+.HTML_Container {
+    display: grid;
+    /* justify-items: stretch; */
+    align-content;
+
+}
 
 .Nav_Bar {
-    display: inline;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: stretch;
+    /* justify-items: end; */
+    /* grid-auto-rows: minmax(100px, auto); */
 }
-.profile_pic img{
+
+/* Change hobe */
+.Nav_Barprofile img{
     width: 5em;
     border-radius: 50%;
-    /* display: inline; */
+    align-self: end;
 }
